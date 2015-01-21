@@ -9,11 +9,6 @@
     'service': 'nscp',
     'config': 'C:\\Program Files\\NSClient++\\nsclient.ini',
   },
-  'default': {
-        'pkg': 'nsclient_x64',
-        'service': 'nscp',
-        'config': 'C:\\Program Files\\NSClient++\\nsclient.ini',
-    },
 }, grain='cpuarch', merge=salt['pillar.get']('nsclient:lookup:server')) %}
 
 {% set template = salt['grains.filter_by']({
