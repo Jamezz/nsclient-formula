@@ -5,7 +5,7 @@
   'upgrade': salt['pillar.get']('nsclient:server:package:upgrade', False),
   'config': {
     'manage': salt['pillar.get']('nsclient:server:config:manage', False), 
-    'name': nsclient.server.config,
+    'name': nsclient.lookup.config,
     'source': salt['pillar.get']('nsclient:server:config:source', 'salt://nsclient/conf/server.cfg'),
     },
   'service': {
