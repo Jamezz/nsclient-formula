@@ -14,12 +14,6 @@ nsclient:
       debug: False
       commandtimeout: 60
       connectiontimeout: 300
-  plugins:
-    package:
-      upgrade: False
-    config: 
-      manage: False
-      contents: |
   lookup:
     server:
       service: nscp
