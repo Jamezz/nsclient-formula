@@ -9,7 +9,7 @@
     'source': salt['pillar.get']('nsclient:server:config:source', 'salt://nsclient/conf/server.cfg'),
     },
   'service': {
-    'name': nsclient.server.service,
+    'name': nsclient.lookup.server.service,
     'manage': salt['pillar.get']('nsclient:server:service:manage', False), 
     'enable': salt['pillar.get']('nsclient:server:service:enable', True), 
   },
