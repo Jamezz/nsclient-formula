@@ -6,7 +6,7 @@ nsclient:
       manage: False
       enable: True
     config:
-      manage: False
+      manage: True
       source: salt://nsclient/nsclient.ini
       port: 5666
       allowedhosts: '10.138.11.1',
