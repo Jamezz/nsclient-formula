@@ -1,8 +1,9 @@
 {% from "nsclient/map.jinja" import nsclient with context %}
 
+include:
+     - nsclient.installed
+
+
 nsclient:
-  pkg.installed:
-    - name: {{ nsclient.lookup.package }}
-  service.running:
-    - name: {{ nsclient.lookup.service }}
-    - enable: True
+    require:
+       - sls: nsclient.installed
