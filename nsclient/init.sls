@@ -1,6 +1,6 @@
-{% from "nsclient/map.jinja" import template with context %}
+{% from "nsclient/map.jinja" import nsclient with context %}
 
-template:
+nsclient:
   pkg.installed:
     - name: {{ template.pkg }}
   service.running:
