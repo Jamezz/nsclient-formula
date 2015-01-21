@@ -1,4 +1,4 @@
-{% from "template/map.jinja" import template with context %}
+{% from "nsclient/map.jinja" import template with context %}
 
 template:
   pkg.installed:

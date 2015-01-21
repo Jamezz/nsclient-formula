@@ -1,3 +1,25 @@
-template:
+nsclient:
+  server:
+    package:
+      upgrade: False
+    service:
+      manage: False
+      enable: True
+    config:
+      manage: False
+      source: salt://nsclient/nsclient.ini
+      port: 5666
+      allowedhosts: '10.138.11.1',
+      dbn: True
+      debug: False
+      commandtimeout: 60
+      connectiontimeout: 300
+  plugins:
+    package:
+      upgrade: False
+    config: 
+      manage: False
+      contents: |
   lookup:
-    master: template-master
+    server:
+      service: nscp
