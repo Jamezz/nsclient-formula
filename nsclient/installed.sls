@@ -1,4 +1,4 @@
-{% from "nsclient/map.jinja" import nsclient with context %}
+{% from "map.jinja" import nsclient with context %}
 
 {% set server = {
   'package': nsclient.lookup.package,
