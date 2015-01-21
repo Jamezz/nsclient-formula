@@ -9,7 +9,7 @@ nsclient:
       manage: True
       source: salt://nsclient/nsclient.ini
       port: 5666
-      allowedhosts: '10.138.11.1',
+      allowedhosts: '10.138.11.1'
       dbn: True
       debug: False
       commandtimeout: 60
