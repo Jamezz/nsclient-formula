@@ -2,7 +2,7 @@
 
 nsclient:
   pkg.installed:
-    - name: {{ template.pkg }}
+    - name: {{ nsclient.lookup.package }}
   service.running:
-    - name: {{ template.service }}
+    - name: {{ nsclient.lookup.service }}
     - enable: True
