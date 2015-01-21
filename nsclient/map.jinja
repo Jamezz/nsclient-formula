@@ -1,4 +1,4 @@
-{% set lookup: = salt['grains.filter_by']( {
+{% set lookup = salt['grains.filter_by']( {
   'AMD64': {
     'package': 'nsclient_x64',
     'service': 'nscp',
