@@ -1,14 +1,8 @@
 ================
-template-formula
+nsclient-formula
 ================
 
-A saltstack formula that is empty. It has dummy content to help with a quick
-start on a new formula.
-
-.. note::
-
-    See the full `Salt Formulas installation and usage instructions
-    <http://docs.saltstack.com/en/latest/topics/development/conventions/formulas.html>`_.
+A saltstack formula that is used to install and create a basic configuration for NSClient on Windows.
 
 Available states
 ================
@@ -16,7 +10,14 @@ Available states
 .. contents::
     :local:
 
-``template``
+``installed``
 ------------
 
-Installs the template package, and starts the associated template service.
+Installs the NSClient package, sets the configuration file and starts the associated service (nscp).
+
+NOTE: You will need to restart the service to apply the configuration written by salt.
+
+``purged``
+------------
+
+Purges the NSClient package and configuration.
