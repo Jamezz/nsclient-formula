@@ -15,6 +15,7 @@
   },
 } %}
 
+
 nsclient.purged:
   pkg.purged:
     - name: {{ server.package }}
