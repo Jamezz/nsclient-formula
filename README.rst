@@ -10,7 +10,7 @@ This formula depends on having two packages defined in your repo/salt filesystem
 
  Example definition of nsclient_x64:
 
- 
+ ```
  nsclient_x64:
     0.4.2.93:
         installer: 'http://files.nsclient.org/released/NSCP-0.4.2.93-x64.msi'
@@ -20,7 +20,7 @@ This formula depends on having two packages defined in your repo/salt filesystem
         msiexec: True
         uninstaller: 'http://files.nsclient.org/released/NSCP-0.4.2.93-x64.msi'
         uninstall_flags: '/quiet'
-
+ ```
 
 Available states
 ================
