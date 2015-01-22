@@ -9,7 +9,6 @@ This formula depends on having two packages defined in your repo/salt filesystem
  - nsclient_x86
 
  Example definition of nsclient_x64:
-
  ```
  nsclient_x64:
     0.4.2.93:
