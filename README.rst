@@ -9,7 +9,9 @@ This formula depends on having two packages defined in your repo/salt filesystem
  - nsclient_x86
 
  Example definition of nsclient_x64:
- ```
+
+ ```SaltStack
+
  nsclient_x64:
     0.4.2.93:
         installer: 'http://files.nsclient.org/released/NSCP-0.4.2.93-x64.msi'
