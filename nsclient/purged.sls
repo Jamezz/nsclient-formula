@@ -5,11 +5,11 @@
   'upgrade': salt['pillar.get']('nsclient:server:package:upgrade', False),
   'config': {
     'manage': salt['pillar.get']('nsclient:server:config:manage', False), 
-    'name': nsclient.server.config,
+    'name': nsclient.lookup.config,
     'source': salt['pillar.get']('nsclient:server:config:source', 'salt://nsclient/conf/server.cfg'),
     },
   'service': {
-    'name': nsclient.lookup.service,
+    'name': salt['pillar.get']('nsclient:lookup:server:service:', 'nscp'),
     'manage': salt['pillar.get']('nsclient:server:service:manage', False), 
     'enable': salt['pillar.get']('nsclient:server:service:enable', True), 
   },
