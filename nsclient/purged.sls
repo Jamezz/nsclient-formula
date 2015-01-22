@@ -15,12 +15,10 @@
   },
 } %}
 
-nsclient.server.purged:
+nsclient.purged:
   pkg.purged:
     - name: {{ server.package }}
 {% if server.config.manage %}
   file.absent:
     - name: {{ server.config.name }}
 {% endif %}
-  require:
-    - nsclient.plugins.purged
